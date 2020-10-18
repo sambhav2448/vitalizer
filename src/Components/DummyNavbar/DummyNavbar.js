@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar } from "react-bootstrap";
 import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 import "./DummyNav.css";
 
 function DummyNavbar() {
@@ -36,9 +37,8 @@ function DummyNavbar() {
           </a>
         </Navbar.Text>
         <Navbar.Text>
-          <a
-            href="https://www.canva.com/design/DAEKOh14oEM/y-owL5s4jFKPCRtAfvMGiw/view"
-            target="_blank"
+          <Link
+            to="/about"
             rel="noopener noreferrer"
             style={{
               color: "#EFF3F8",
@@ -48,7 +48,7 @@ function DummyNavbar() {
             }}
           >
             ABOUT
-          </a>
+          </Link>
         </Navbar.Text>
       </Navbar.Collapse>
     </Navbar>
